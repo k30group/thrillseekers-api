@@ -7,7 +7,7 @@ module.exports = {
     './src/index',
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
   },
   plugins: [
@@ -18,7 +18,7 @@ module.exports = {
     rules: [
       {
         test: /\.js?$/,
-        use: [ 'babel-loader' ],
+        use: ['babel-loader'],
         include: path.join(__dirname, 'src'),
       },
     ],
