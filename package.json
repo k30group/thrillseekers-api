@@ -4,7 +4,7 @@
   "description": "micro-rest",
   "main": "index.js",
   "scripts": {
-    "start": "yarn run build && micro dist/bundle.js",
+    "start": "yarn run build && micro api/bundle.js",
     "build": "webpack",
     "watch": "webpack -w"
   },
